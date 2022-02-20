@@ -13,14 +13,14 @@ namespace Quantum.Kata.SingleQubitGates {
     
     // Exercise 1.
     operation ApplyY (q : Qubit) : Unit is Adj+Ctl {
-        // ...
-
+        Y(q);
     }
 
     // Exercise 2.
     operation GlobalPhaseI (q : Qubit) : Unit is Adj+Ctl {
-        // ...
-
+       Z(q);
+       Y(q);
+       X(q);
     }
 
     // Exercise 3.
@@ -37,8 +37,8 @@ namespace Quantum.Kata.SingleQubitGates {
 
     // Exercise 5.
     operation ThreeQuatersPiPhase (q : Qubit) : Unit is Adj+Ctl {
-        // ...
-        
+        S(q);
+        T(q);    
     }
 
     // Exercise 6.
